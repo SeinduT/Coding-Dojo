@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.main-body {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-body section {
+    width: 50%;
+    margin: 0 2em;
+}
+ul.messages {
+    list-style: none;
+}
+li.error {
+    color: firebrick;
+}
+li.success {
+    color: forestgreen;
+}
+#header {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+#header h1 {
+    width: 400px;
+}
+#header .head {
+    display: flex;
+    float: right;
+    margin: 0px;
+    glyph-orientation-vertical: auto;
+}
+#header a {
+    float: right;
+}
+
+div .container {
+    border-style: 2px solid black;
+    border-spacing: inherit;
+    word-spacing: initial;
+    margin: 0px;
+    padding: 0px;
+}
+.container p {
+    display: flex;
+}
+.container h6 {
+
+}

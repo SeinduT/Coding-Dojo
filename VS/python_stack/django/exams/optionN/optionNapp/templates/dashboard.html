@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success!</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div id='wrap'>
+        <h1>Hi {{user.first_name}} {{user.last_name}}!</h1>
+        <a href="/logout">Logout</a>
+        <div id='write'>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <form action="/posts_thought" method="POST">
+                {% csrf_token %}
+                <textarea name="thought"></textarea>
+                <button type="submit" class="button">Add Thought!</button>
+            </form>
+        </div>
+        <div id='display'>
+            {% for posts in all_thoughts %}
+            <div class='one_post'>
+                <p>{{posts.poster.first_name}} says: </p>
+                <p>{{posts.thought}}</p>
+                <p><a href="/posts/{{posts.id}}">Details</a></p>
+                <p>{{posts.liked_by.count}} people like this</p>
+                {% if posts.poster.id == request.session.user_id %}
+                    <a href="/delete/{{posts.id}}">Delete</a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</body>
+
+</html>

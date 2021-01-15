@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Disappearing Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            width: 1000px;
+            padding: 0px auto;
+        }
+        .container {
+            width: 900px;
+            margin: 0px auto;
+        }
+        .picture {
+            width: 210px;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+                $(this).hide('slow');
+            });
+            $('#btn').click(function() {
+                $('img').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery - assignment 1</h1>
+    <div class= "container">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/black-cartoon-ninja-jumping-throw-600w-1569184870.jpg" alt= "ninja_picture">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/cartoon-black-ninja-pointing-finger-600w-1754737721.jpg" alt= "ninja_picture">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/black-ninja-cartoon-holding-sword-600w-1382248841.jpg" alt= "ninja_picture">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/black-cartoon-ninja-jumping-like-600w-1568352475.jpg" alt= "ninja_picture">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/black-cartoon-ninja-attacking-throwing-600w-1569189679.jpg" alt= "ninja_picture">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/black-cartoon-ninja-throwing-star-600w-1570262356.jpg" alt= "ninja_picture">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/black-cartoon-ninja-running-fast-600w-1569188362.jpg" alt= "ninja_picture">
+        <img class= "picture" src= "https://image.shutterstock.com/image-vector/black-cartoon-ninja-jump-attack-600w-1568348164.jpg" alt= "ninja_picture">
+    </div>
+    <button id= "btn">Restore All</button>
+</body>
+</html>

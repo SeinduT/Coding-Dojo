@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px dashed red; */
+    font-family: sans-serif;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+    .header {
+        background-color: #f9f9f9;
+        padding: 10px 0px;
+    }
+    .header h1 {
+        font-family: cursive;
+        display: inline;
+        margin-left: 20px;
+    }
+    .header h2 {
+        display: inline;
+        float: right;
+        font-size: 20px;
+        margin: 8px 15px 5px 0px;
+    }
+
+    #main {
+        background-color:  #351c1c;
+        padding: 20px;
+    }
+    #about {
+        margin-bottom: 20px;
+    }
+    #about img {
+        height: 250px;
+        border: 3px solid gray;
+    }
+    #about div {
+        display: inline-block;
+        vertical-align: top;
+        height: 256px;
+        width: 540px;
+        margin-left: 28px;
+        background-color: white;
+    }
+    #about div h3, #middle_1 div h3, #middle_1 div h4 {
+        background-color: silver;
+        color: white;
+        padding: 4px 10px;
+        text-align: left;
+    }
+    #about div h3, #about div p {
+        padding: 10px;
+    }
+    #about a {
+        display: block;
+        padding: 20px;
+    }
+
+    #middle_1 div {
+        display: inline-block;
+        width: 300px;
+        vertical-align: top;
+        background-color: white;
+        text-align: center;
+        margin-right: 25px;
+    }
+    #middle_1 div:last-of-type {
+        margin-right: 0px;
+    }
+    #middle_1 img {
+        width: 300px;
+    }
+    #middle_1 div p {
+        background-color: white;
+        font-size: 14px;
+        padding: 6px;
+        height: 140px;
+        margin-top: -6px;
+        text-align: left;
+    }
+    #middle_1 div div {
+        text-align: left;
+    }
+    #middle_1 div div img {
+        width: 30px;
+        margin: 5px;
+    }
+    #middle_1 div button {
+        background-color: teal;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: slategrey;
+        margin-bottom: 10px;
+    }
+    #footer{
+        height: 40px
+        background-color: #f9f9f9;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    #footer div img {
+        width: 15px;
+    }

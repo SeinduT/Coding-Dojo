@@ -1,0 +1,44 @@
+# Create 3 new users   
+ Users.objects.create(first_name = "Wesley", last_name = "BabyTiger", email_address = "wesleybtiger@catmail.com", age = 12)
+ Users.objects.create(first_name = "Frankie", last_name = "BabyKitty", email_address = "frankiebKitty@catmail.com", age = 7)
+ Users.objects.create(first_name = "Melly", last_name = "Missy", email_address = "mellymissy@catmail.com", age = 13)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Retrieve all the users   
+Users.objects.all()
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Retrieve the last user   
+Users.objects.last()
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Retrieve the first user  
+Users.objects.first()
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Change the user with id=3 so their last name is Pancakes.    
+user_three = Users.objects.get(id=3)
+user_three.last_name = "Pancakes"
+user_three.save()
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Delete the user with id=2 from the database  
+user_two = Users.objects.get(id=2)
+user_two.delete()
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Get all the users, sorted by their first name    
+Users.objects.order_by('first_name')
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# Get all the users, sorted by their first name in descending order  
+Users.objects.order_by('-first_name')
+
+-----------------------------------------------------------------------------------------------------------------------------

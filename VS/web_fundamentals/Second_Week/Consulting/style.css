@@ -1,0 +1,151 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    /* outline: 1px solid red; */
+}
+#wrapper {
+    background-color: #062134;
+    width: 1000px;
+    margin: 0px auto;
+    color: white;
+    padding: 5px;
+}
+#header {
+    padding: 10px;
+
+}
+#header span {
+    color: #1b99e8;
+}
+#header h1 {
+    display: inline-block;
+}
+#nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        float: right;
+        padding: 5px;
+}
+#nav li {
+    width: 100px;
+    height: 30px;
+    margin: 0px 10px; 
+    text-align: center;
+    padding-top: 10px;
+
+}
+#inside-wrapper {
+    background-color: white;
+    width: 970px;
+    margin: 10px;
+    padding: 5px;
+}
+#inside-wrapper img {
+    width: 955px;
+    margin: 5px 0px 5px 5px;
+}
+
+#middle div {
+    display: inline-block;
+    width: 295px;
+    vertical-align: top;
+    background-color: #1468a8;
+    margin: 0px 10px 10px 5px;
+    padding: 5px;
+}
+#middle img {
+    width: 30px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px 0px 0px 5px;
+}
+#middle h3 {
+    display: inline-block;
+    font-size: 20px;
+    float: top;
+}
+#middle div p {
+    background-color: #1468a8;
+    font-size: 14px;
+    padding: 10px;
+    height: 80px;
+    margin: 5px 0px 10px 0px;
+    text-align: left;
+}
+#middle div button {
+    background: linear-gradient(#4aaeec,#1993de) ;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    width: 200px;
+    height: 50px; 
+    border: hidden;
+}
+#middle_content div {
+    display: inline-block;
+    width: 295px;
+    vertical-align: top;
+    margin: 0px 10px 10px 5px;
+    padding: 5px;
+    color: black;
+}
+#middle_content h4 {
+    font-size: 22px;
+    white-space: nowrap;
+    margin-left: -5px;
+}
+#middle_content img {
+    width: 305px;
+    margin-left: -5px;
+}
+#middle_content p:first-of-type {
+    font-size: 12px;
+    margin: 30px 10px 10px 5px;
+    vertical-align: middle;
+}
+#middle_content p {
+    font-size: 12px;
+    margin: 10px 10px 10px 5px;
+    vertical-align: middle;
+}
+#middle_content div button {
+    background-color: white;
+    color: #628faf;
+    border: hidden;
+    font-size: 20px;
+    margin-top: 15px;
+    padding-left: 5px;
+}
+#comment p {
+    background-color: #daedff;
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px 0px 0px 10px;
+    font-style: italic;
+}
+#comment h5 {
+    margin-top: 70px;
+}
+#footer {
+    text-align: center;
+    width: 970px;
+    margin: -8px 5px 5px 10px;
+    padding: 3px 5px;
+    background-color: #daedff;
+    color: #5688ac;
+}
+#footer ul {
+    list-style: none;
+    margin: 35px auto 20px auto;
+    ;
+}
+#footer li {
+    display: inline;
+    margin: 20px;
+}
+#footer span {
+    color: #95c6ec;
+}

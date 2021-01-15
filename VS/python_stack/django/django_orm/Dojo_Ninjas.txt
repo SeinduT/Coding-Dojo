@@ -1,0 +1,65 @@
+# Query: Create 3 new dojos
+Dojo.objects.create(name = "Dojo1", city = "New York", state = "NY")
+Dojo.objects.create(name = "Dojo2", city = "Dallas", state = "TX")
+Dojo.objects.create(name = "Dojo3", city = "Seattle", state = "WA")
+
+================================================================================
+
+# Query: Delete the 3 dojos you just created  
+all_dojos = Dojo.objects.all()
+all_dojos.delete()
+
+================================================================================
+
+# Query: Create 3 more dojos  
+dojo4 = Dojo.objects.create(name = "Dojo 4", city = "Austin", state = "TX")
+dojo5 = Dojo.objects.create(name = "Dojo 5", city = "Phoenix", state = "AZ")
+dojo6 = Dojo.objects.create(name = "Dojo 6", city = "Portland", state = "OR")
+
+================================================================================
+
+# Query: Create 3 ninjas that belong to the first dojo  
+ninja1 = Ninja.objects.create(first_name = "West", last_name = "Boy", dojo = dojo4)
+ninja2 = Ninja.objects.create(first_name = "Frank", last_name = "Kitty", dojo = dojo4)
+ninja3 = Ninja.objects.create(first_name = "Wowie", last_name = "Wonderboy", dojo = dojo4)
+
+================================================================================
+
+# Query: Create 3 ninjas that belong to the second dojo  
+ninja4 = Ninja.objects.create(first_name = "Killer", last_name = "Ninja", dojo = dojo5)
+ninja5 = Ninja.objects.create(first_name = "Smooth", last_name = "Ninja", dojo = dojo5)
+ninja6 = Ninja.objects.create(first_name = "Dancing", last_name = "Ninja", dojo = dojo5)
+
+================================================================================
+
+# Query: Create 3 ninjas that belong to the third dojo  
+ninja7 = Ninja.objects.create(first_name = "Quiet", last_name = "Killer", dojo = dojo6)
+ninja8 = Ninja.objects.create(first_name = "Bad", last_name = "Boy", dojo = dojo6)
+ninja9 = Ninja.objects.create(first_name = "Stealthy", last_name = "Cat", dojo = dojo6)
+
+================================================================================
+
+# Query: Retrieve all the ninjas from the first dojo  
+Dojo.objects.first().ninjas.all()
+
+================================================================================
+
+# Query: Retrieve all the ninjas from the last dojo  
+Dojo.objects.last().ninjas.all()
+
+================================================================================
+
+# Query: Retrieve the last ninja's dojo  Add a new text field 
+called "desc" to your Dojo class  Create and run the migration 
+files to update the table in your database. If needed, 
+provide a default value of "old dojo"  
+
+Ninja.objects.last().dojo
+
+
+================================================================================
+
+# Query: Create a new dojo 
+Dojo.objects.create(name = "Dojo7", city = "Chicago", state = "MI", desc = "Newest Dojo")
+
+

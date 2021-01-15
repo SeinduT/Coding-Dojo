@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My jQuery basic assignment!</title>
+    <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .color {
+            color: red;
+        }
+        .backgroundcolor {
+            background-color:rgb(202, 199, 199);
+        }
+    </style>
+    <script type="text/javascript">    
+        $(document).ready(function() {
+            $('img').hide();
+            $('#head1').hover(function() {
+                alert("click on the button to add class");
+            });
+            $('#btn1').click(function() {
+                $('#p1').addClass('color');
+            });
+            $('#head2').click(function() {
+                alert("click on the button to see the image");
+            });
+            $('#btn2').click(function() {
+                $('img').slideToggle();
+            });
+            $('#head3').click(function() {
+                alert("click on the button to add new paragraph");
+            });
+            $('#btn3').click(function() {
+                $('#p3').append('<div> This is a new Paragraph </div>');
+            });
+            $('#hideP').click(function() {
+                $('p').hide();
+            });
+            $('#showP').click(function() {
+                $('p').show();
+            });
+            $('#toggle').click(function() {
+                $('h1').toggleClass('backgroundcolor');
+            });
+            $('#slideUp').click(function() {
+                $('p').slideUp();
+            });
+            $('#slideDown').click(function() {
+                $('p').slideDown();
+            });
+            $('#fadeIn').click(function() {
+                $('h1').fadeIn();
+            });
+            $('#fadeOut').click(function() {
+                $('h1').fadeOut();
+            });
+            $('#before').click(function() {
+                $('h1').before("Let's do this");
+            });
+            $('#after').click(function() {
+                $('p').after('Good Bye!');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id= "head1">Add Class</h1>
+        <button id= "btn1">AddClass</button>
+        <p id= "p1">Click the button to add class 'red' to this paragraph</p>
+    </div>
+    <div>
+        <h1 id= "head2">Slide toggle</h1>
+        <button id= "btn2">Slidetoggle</button>
+        <p id= "p2">Click the button to slidetoggle a hidden image</p>
+        <img src= "https://cdn.searchenginejournal.com/wp-content/uploads/2017/09/Untitled-design-10-760x400.png">
+    </div>
+    <div>
+        <h1 id= "head3">Append</h1>
+        <button id= "btn3">Append</button>
+        <p id= "p3">Click the button to append a new paragraph</p>
+    </div>
+    <div>
+        <button id= "hideP">Hide Paragraph</button>
+        <button id= "showP">Show Paragraph</button>
+        <button id= "toggle">Change background color</button>
+        <button id= "slideUp">Slide up Paragraph</button>
+        <button id= "slideDown">Slide down Paragraph</button>
+        <button id= "fadeOut">Fade out Headers</button>
+        <button id= "fadeIn">Fade in Headers</button>
+        <button id= "before">Put in before</button>
+        <button id= "after">Put in after</button>
+    </div>
+</body>
+</html>

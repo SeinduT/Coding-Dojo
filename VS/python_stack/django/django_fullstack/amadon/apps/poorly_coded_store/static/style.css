@@ -1,0 +1,57 @@
+body {
+    margin: 50px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+form {
+    margin: 0 0px;
+    text-align: left;
+}
+table thead tr th {
+    border: 2px solid black;
+    color: gold;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0px 0;
+    border-style: solid;
+    border: 3px solid black;
+    margin-left: 19px;
+    width: 465px;
+}
+tr {
+    padding: 0px;
+    border-collapse: separate;
+    border: 3px solid black;
+}
+th {
+    text-align: left;
+    padding: 0px;
+}
+table tbody tr td {
+    border: 1px solid black;
+}
+
+.wrapper {
+    background-color: #3b463bd7;
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+    color: white;
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+    color: darkmagenta;
+    padding: 10px;
+}
+h3 {
+    color: gold;
+    text-align: center;
+}
+p {
+    color: lightseagreen;
+}
+p a {
+    margin-left: 40%;

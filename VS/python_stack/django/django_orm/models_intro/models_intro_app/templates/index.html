@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Dragons</title>
+</head>
+<body>
+    {{all_dragons}}
+    {% for dragon in all_dragons %}
+        {% if dragon.name == "Frankie" %}
+            <p>TOP SECRECT NAME, SECRET AGENT</p>
+        {% else %}
+            <p>{{dragon.name}}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

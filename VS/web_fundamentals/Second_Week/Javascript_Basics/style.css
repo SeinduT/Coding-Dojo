@@ -1,0 +1,80 @@
+.container {
+    width: 970px;
+    height: 800px;
+    background-color: #1b345d;
+    padding: 5px;
+}
+.header {
+    background-color: #cf3036;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+.header h1{
+    color: #c2d6ec;
+    margin: 0;
+    padding: 15px 0 15px 15px
+}
+
+.menu_box {
+    background-color:#2b7f8f;
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+.menu_box ul {
+    padding-left: 15px;
+    margin: 0;
+}
+.menu_box a {
+    color: #5eced5;
+    font-size: 12px;
+}
+
+.text_box {
+    background-color: #0e1822;
+    color: #b9d0e8;
+    font-size: 13px;
+    height:400px;
+    width: 750px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.text_box a {
+    color: #6adde4;
+}
+.text_box h2 {
+    font-size: 15px;
+    margin: 5px 0px 0px 10px;
+}
+.text_box p {
+    font-size: 13px;
+    margin: 5px 0px 0px 10px;
+}
+.text_box ul {
+    padding: 5px 0px 0px 13px;
+    margin: 10px;
+}
+.text_box span {
+    color: #6278ff;
+}
+
+
+.end_box {
+    background-color: #5d6673;
+    height: 75px;
+    width: 100%;
+    border-radius: 15px;
+}
+.end_box a {
+    color: #6adde4;
+}
+.end_box h4 {
+    color: #c2d6ec;
+    margin: 0;
+    padding: 25px 0px 0px 15px
+}

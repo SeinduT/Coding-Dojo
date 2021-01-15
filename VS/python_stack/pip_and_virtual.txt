@@ -1,0 +1,31 @@
+pip install Django==1.11.9
+installing Django 1.11.9, download and installed the pytz, Django package.
+
+pip list 
+lists Django 1.11.9, pip 20.1.1, pytz 2020.1, setuptools 47.1.0
+
+deactivate
+deactivated the virtual enviroment
+
+pip3 list
+only showed pip and setuptools packages
+
+call myEnvironments/py3Env/Scripts/activate
+reactivated the virtual environemnt
+
+pip install Django==1.11.9
+collected cached Django and pytz and installed.
+
+pip freeze
+allows you to see what modules you have installed 
+
+Django==1.11.9 and pytz==2020.1 was inside requirements.txt file
+
+pip uninstall Django 
+prompt you to proceed with uninstallation y/n, i've selected n since i will need it in the future
+
+pip show Django
+shows you Django info such as version, summary, author, etc...
+
+pip search Flask
+displays all the packages containing the name flask

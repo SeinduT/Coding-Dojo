@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<body>
+    <a href="/success">Dashboard</a>
+    <a href="/logout">Logout</a>
+    <div>
+        <p>{{thoughts.poster.first_name}} says: </p>
+        <p>{{thoughts.thought}}</p>
+        <a href="/addlike/{{thoughts.id}}" role="button" class="btn btn-danger">Like!</a>
+        <a href="/removelike/{{thoughts.id}}" role="button" class="btn btn-warning">Unlike!</a>
+    </div>
+    <h3>People who liked this thought:</h3>
+    <div>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            {% for user in thoughts.liked_by.all %}
+            <tr>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
